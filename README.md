@@ -1,4 +1,4 @@
-# Nooro Backend
+# Todo App Backend
 
 A lean backend starter using **Express.js**, **TypeScript**, **Prisma**, and **MySQL (Docker)**.  
 MySQL runs in Docker; the API runs on your machine (or in Docker if you prefer).  
@@ -214,3 +214,4 @@ curl -X PUT http://localhost:4000/tasks/1   -H "Content-Type: application/json" 
 # delete
 curl -X DELETE http://localhost:4000/tasks/1
 ```
+
