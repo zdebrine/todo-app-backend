@@ -6,22 +6,19 @@ Quickstart
 # 1) Install deps
 npm install
 
-# 2) Copy envs and set values
-cp .env.example .env
-
-# 3) Start MySQL in Docker
+# 2) Start MySQL in Docker
 docker compose up -d
 
-# 4) Point Prisma to the DB (choose one)
+# 3) Point Prisma to the DB (choose one)
 #    If tables already exist:
 npx prisma db pull && npx prisma generate
 #    If starting fresh (creates tables from schema):
 npx prisma migrate dev --name init
 
-# 5) Run the API
+# 4) Run the API
 npm run dev
 
-# 6) Smoke test
+# 5) Smoke test
 curl http://localhost:4000/health
 
 Prerequisites
@@ -167,3 +164,4 @@ curl -X PUT http://localhost:4000/tasks/1 \
 
 # delete
 curl -X DELETE http://localhost:4000/tasks/1
+
